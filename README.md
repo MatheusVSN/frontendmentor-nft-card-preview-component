@@ -5,7 +5,7 @@
 ![Desktop](desktop-preview-1920x1080.png)
 
 <h3>Preview</h3>
-https://matheusvsn.github.io/nft-card-preview-component/
+https://matheusvsn.github.io/frontendmentor-nft-card-preview-component/
 
 <h3>Built with</h3>
 <div align="left">
