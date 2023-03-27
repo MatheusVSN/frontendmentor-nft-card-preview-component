@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto&family=Work+Sans&display=swap');
+
+:root {
+  /* Primary colors */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral colors */
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Viewing image color */
+  --onview-soft-blue: hsl(178, 100%, 50%, 50%);
+
+  /* Font */
+  --Font-paragraph-deafult: 18px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+
+
+    font-family: Outfit;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
+
+    display: grid;
+    place-content: center;
+
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--White);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-style-1 {
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+.text-style-2 {
+    color: var(--Cyan);
+    font-weight: 400;
+}
+
+b {
+    color: var(--White);
+}
+
+.text-can-hover {
+    transition: color 250ms ease-out;
+}
+
+.text-can-hover:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.main-card-component {
+    width: 300px;
+    padding: 20px;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 16px;
+}
+
+.main-card-component > .text-style-1 {
+    margin-bottom: 20px;
+}
+
+.main-image-container {
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: contain;
+
+    height: 300px;
+    width: 300px;
+
+    border-radius: 8px;
+}
+
+.main-image-container:hover > .user-view-effect {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.user-view-effect {
+    display: grid;
+    place-content: center;
+
+    background-color: var(--onview-soft-blue);
+    border-radius: 8px;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    transition: opacity 250ms ease-out;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+}
+
+li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.margin-left > * {
+    margin-left: 10px;
+}
+
+.margin-right > * {
+    margin-right: 10px;
+}
+
+.line {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    margin-right: 10px;
+}
+
+.profile-information {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-image {
+    height: 20px;
+}
